@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1,
+        "nombre": "Layla",
+        "edad": 18,
+        "info": "Nació en una familia de armas. Alegre y extrovertida de niña, siempre fue optimista y llena de sentido de la justicia y la aventura. Soñó con convertirse en una emisaria de la Tierra del Amanecer que lucharía para proteger su paz.",
+        "url_image" : "https://i.pinimg.com/originals/90/ef/85/90ef858e459828d485461a110c9c5323.jpg",
+        "franquicia": "Mobile Legends"
+    },
+    {
+        "id" : 2,
+        "nombre": "Asuka",
+        "edad": 18,
+        "info": "Una joven talentosa que valora su autonomía y anhela ser reconocida como adulta. No obstante, resulta evidente que tiene dificultades para expresar sus verdaderos sentimientos a los demás, siendo agresiva, presumida y obstinada en muchas ocasiones. ",
+        "url_image" : "https://i.pinimg.com/originals/58/84/9e/58849e5caab44e0f25ece5218e520ed0.jpg",
+        "franquicia": "Evangelion"
+    },
+    {
+        "id" : 3,
+        "nombre": "Miya",
+        "edad": 19,
+        "info": "Fue testigo de las tragedias indescriptibles que sucedieron a los Elfos en la guerra sin fin, siguió a la Diosa de la Luna hasta la salvación, luego experimentó personalmente la segunda guerra continental con los humanos y fue testigo de muchos de su pueblo.",
+        "url_image" : "https://i.pinimg.com/originals/59/54/51/595451b8d6a121fecc9a8c1003d7ca55.jpg",
+        "franquicia": "Mobile Legends"
+    },
+    {
+        "id" : 4,
+        "_nombre": "...",
+        "edad": 19,
+        "info": "Sin datos",
+        "url_image" : "https://i.pinimg.com/originals/fd/dc/f9/fddcf9c6bd9a6fc8e938f907b8f9e4eb.jpg",
+        "franquicia": "AI girl Generate"
+    }
+]

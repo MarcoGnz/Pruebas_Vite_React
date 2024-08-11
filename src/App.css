@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  
+  background-color: rgba(255, 255, 255, 0.5); /* Blanco con 80% de opacidad */
+  border: none; /* Opcional: elimina el borde para un efecto más limpio */
+}
+
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/fa/27/78/fa277875d76bc4f0e504c4b275a2dd17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.text-font {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;  
+
+}
+
+.c {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
+  border-radius: 10%; 
+}
+
+.cuandro-imagen {
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:1727418499. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(24, 82, 92, 0.5);
+}
+
+.cuandro-imagen img {
+  height: 200px;
+  width: 200px;
+  
+}
