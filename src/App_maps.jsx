@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App_maps.css'
 
-function App() {
+function App_maps() {
   
   const miArray=()=>{
     const numeroArray = ['uno', 'dos', 'tres', 'cuatro', 'cinco']
@@ -52,4 +52,4 @@ function App() {
   )
 }
 
-export default App
+export default App_maps

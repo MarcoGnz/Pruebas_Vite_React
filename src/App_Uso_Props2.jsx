@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import "./App_uso_props2.css";
 
-function App() { 
+function App_uso_props2() { 
 
     const [datos, setDatos] = useState([])
     
@@ -46,4 +46,4 @@ function Info({ informacion }) {
     </div>
   );
 }
-export default App;
+export default App_uso_props2;

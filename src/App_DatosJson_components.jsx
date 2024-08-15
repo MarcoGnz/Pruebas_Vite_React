@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./DatosJson.css";
 
 import Cartas from "./components/carts";
 
-function App() {
+function DatosJson() {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
@@ -26,4 +26,4 @@ function App() {
     );
 }
 
-export default App;
+export default DatosJson;

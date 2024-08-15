@@ -1,10 +1,10 @@
 
-import './App.css';
+import './App_prueba_api.css';
 import React, { useState, useRef, useEffect } from 'react';
 
 
 /*
-function App() {
+function App_prueba_api() {
   //Ejemplo de useState
   const [resultado , setResultado] = useState(null);
 
@@ -45,7 +45,7 @@ function suma(a,b) {
  */
 
 /* 
-function App() {
+function App_prueba_api() {
   // Ejemplo de useRef
   const videoRef = useRef(null)
   const videoPlay=()=>{
@@ -71,7 +71,7 @@ function App() {
 }*/
 
 /*
-function App() {
+function App_prueba_api() {
   // Ejercicio: Conversión de guaraníes a dólares
   const inputRef = useRef(null);
   const input = <input 
@@ -106,7 +106,7 @@ function convertidor_G_a_US(a) {
 */
 
 /* 
-function App() {
+function App_prueba_api() {
   //conversor Euro dollar 
   const euroRef= useRef()
   const resultado = useRef()
@@ -128,7 +128,7 @@ function getRandomInt(max) {
   let number = Math.floor(Math.random() * max) + 1;
   return number;
 }
-function App() {
+function App_prueba_api() {
   // API pokemon
   const [imagenPokemon, setImagenPokemon] = useState(null);
   const nombrePokemon = useRef();
@@ -164,4 +164,4 @@ function App() {
   );
 }
 
-export default App;
+export default App_prueba_api;

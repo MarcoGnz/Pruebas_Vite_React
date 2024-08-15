@@ -1,13 +1,13 @@
 import { useState, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App_usoComponents.css'
 import Contador from './components/contador'
 import Saludos from './components/pruebaCompornente'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function App() {
+function App_usoComponents() {
 
 
 
@@ -33,4 +33,4 @@ function App() {
   )
 }
 
-export default App
+export default App_usoComponents
