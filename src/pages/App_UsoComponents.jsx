@@ -14,7 +14,7 @@ function App_usoComponents() {
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src="src/assets/react.svg" className="logo react" alt="React logo" />
+          <img src="react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
       <h2 className='text-white'>Vite + React</h2>

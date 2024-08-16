@@ -8,7 +8,7 @@ function DatosJson() {
     useEffect(() => {
         const llamarDatos = async () => {
             try {
-                const respuesta = await fetch('../src/assets/datos.json'); // Ajusta la ruta si es necesario
+                const respuesta = await fetch('datos.json'); // Ajusta la ruta si es necesario
                 const info = await respuesta.json();
                 setDatos(info); // Guarda los datos en el estado
             } catch (error) {

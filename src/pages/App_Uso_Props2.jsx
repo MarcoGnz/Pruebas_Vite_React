@@ -7,7 +7,7 @@ function App_Uso_props2() {
     useEffect(() => {
       const llamarDatos = async () => {
         try {
-          const respuesta = await fetch('src/assets/datos.json');
+          const respuesta = await fetch('datos.json');
           const info = await respuesta.json();
           setDatos(info);
         } catch (error) {
