@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./DatosJson.css";
 
-import Cartas from "./components/carts";
+import Cartas from "/src/components/carts.jsx";
 
 function DatosJson() {
     const [datos, setDatos] = useState([]);

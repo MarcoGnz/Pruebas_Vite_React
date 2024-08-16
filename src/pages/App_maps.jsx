@@ -1,7 +1,4 @@
 import { useState, useRef } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App_maps.css'
 
 function App_maps() {
   
@@ -9,7 +6,8 @@ function App_maps() {
     const numeroArray = ['uno', 'dos', 'tres', 'cuatro', 'cinco']
     return <p>
       {numeroArray.map((numero, index) => (
-        <span className='text-font' key={index}> clave:{index}&nbsp;valor:{numero}&nbsp; </span>
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2222329366.
+        <span className='text-font' key={index}>[ Indice:{index}&nbsp;valor:{numero} ]&nbsp; &nbsp;</span>
       ))}
     </p>
   }
@@ -18,11 +16,14 @@ function App_maps() {
     const arrayObjetos = [
       {id: 1, nombre: 'Layla'},
       {id: 2, nombre: 'Maria'},
-      {id: 3, nombre: 'Miya'}
+      {id: 3, nombre: 'Miya'},
+      {id: 4, nombre: 'Asuka'},
+      {id: 5, nombre: 'Kira'}
     ]
     return <p>
       {arrayObjetos.map((objeto, index) => (
-        <span className='text-font' key={index}> clave:{objeto.id}&nbsp;valor:{objeto.nombre}&nbsp; </span>
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:4094471416.
+        <span className='text-font' key={index}> [clave:{objeto.id}&nbsp;valor:{objeto.nombre} ]&nbsp;&nbsp; &nbsp; </span>
       ))}
     </p>
   }
@@ -32,10 +33,10 @@ function App_maps() {
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src="/vite.svg" className="logo react" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src="/src/assets/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Vite + React</h1>

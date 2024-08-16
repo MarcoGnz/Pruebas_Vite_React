@@ -1,6 +1,47 @@
-
-import './App_prueba_api.css';
 import React, { useState, useRef, useEffect } from 'react';
+
+function getRandomInt(max) {
+  let number = Math.floor(Math.random() * max) + 1;
+  return number;
+}
+function App_prueba_api() {
+  // API pokemon
+  const [imagenPokemon, setImagenPokemon] = useState(null);
+  const nombrePokemon = useRef();
+
+  const llamadaAPIpokemon = async () => {
+    try {
+      const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/" + getRandomInt(1025));
+      const datos = await respuesta.json();
+      console.log(datos);
+      return datos;
+    } catch (error) {
+      console.log("Error al acceder a la API: ", error);
+    }
+  };
+
+  const BuscarPokemon = async () => {
+    const datosPokemon = await llamadaAPIpokemon();
+    if (datosPokemon) {
+      nombrePokemon.current.innerHTML = datosPokemon.forms[0].name;
+      const imagenPokemon = datosPokemon.sprites.front_default;
+      setImagenPokemon(imagenPokemon);
+      console.log(imagenPokemon);
+    }
+  };
+
+  return (
+    <div className='contenedor'>
+      <h1 className='centrar-titulo'>¿Quién es ese Pokémon?</h1>
+      <button onClick={BuscarPokemon} className='centrar-button'>Buscar Pokémon</button>
+      <div ref={nombrePokemon}></div>
+      <div className='cuandro-imagen'>{imagenPokemon && <img style={{ width: '200px', height: '200px' }}  src={imagenPokemon} alt="Pokemon" />}</div>
+    </div>
+  );
+}
+
+export default App_prueba_api;
+
 
 
 /*
@@ -123,45 +164,3 @@ function App_prueba_api() {
   </div>
 }
 */
-
-function getRandomInt(max) {
-  let number = Math.floor(Math.random() * max) + 1;
-  return number;
-}
-function App_prueba_api() {
-  // API pokemon
-  const [imagenPokemon, setImagenPokemon] = useState(null);
-  const nombrePokemon = useRef();
-
-  const llamadaAPIpokemon = async () => {
-    try {
-      const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/" + getRandomInt(1025));
-      const datos = await respuesta.json();
-      console.log(datos);
-      return datos;
-    } catch (error) {
-      console.log("Error al acceder a la API: ", error);
-    }
-  };
-
-  const BuscarPokemon = async () => {
-    const datosPokemon = await llamadaAPIpokemon();
-    if (datosPokemon) {
-      nombrePokemon.current.innerHTML = datosPokemon.forms[0].name;
-      const imagenPokemon = datosPokemon.sprites.front_default;
-      setImagenPokemon(imagenPokemon);
-      console.log(imagenPokemon);
-    }
-  };
-
-  return (
-    <div className='contenedor'>
-      <h1 className='centrar-titulo'>¿Quién es ese Pokémon?</h1>
-      <button onClick={BuscarPokemon} className='centrar-button'>Buscar Pokémon</button>
-      <div ref={nombrePokemon}></div>
-      <div className='cuandro-imagen'>{imagenPokemon && <img style={{ width: '200px', height: '200px' }}  src={imagenPokemon} alt="Pokemon" />}</div>
-    </div>
-  );
-}
-
-export default App_prueba_api;

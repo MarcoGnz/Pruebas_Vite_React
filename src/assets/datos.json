@@ -30,5 +30,13 @@
         "info": "Sin datos",
         "url_image" : "https://i.pinimg.com/originals/fd/dc/f9/fddcf9c6bd9a6fc8e938f907b8f9e4eb.jpg",
         "franquicia": "AI girl Generate"
+    },
+    {
+        "id" : 5,
+        "_nombre": "...",
+        "edad": 24,
+        "info": "Sin datos",
+        "url_image" : "https://i.pinimg.com/originals/fa/27/78/fa277875d76bc4f0e504c4b275a2dd17.jpg",
+        "franquicia": "AI girl Generate"
     }
 ]

@@ -45,8 +45,10 @@
   color: #888;
 }
 
+
+
 body {
-  background-image: url("https://i.pinimg.com/originals/fa/27/78/fa277875d76bc4f0e504c4b275a2dd17.jpg");
+  background-image: url("https://i.pinimg.com/originals/16/6b/58/166b584a910f96e8d1f0b90671c83d0d.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,6 +63,11 @@ body {
 .c {
   background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
   border-radius: 10%; 
+  padding: 10px;
+  margin: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cuandro-imagen {

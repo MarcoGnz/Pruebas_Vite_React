@@ -21,7 +21,9 @@ function Cartas(props) {
                         </div>
                     </div>
                 </div>
-            ))}
+            )
+            )
+            }
         </div>
     );
 }

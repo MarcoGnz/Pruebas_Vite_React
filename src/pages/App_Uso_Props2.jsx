@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import "./App_uso_props2.css";
 
-function App_uso_props2() { 
+function App_Uso_props2() { 
 
     const [datos, setDatos] = useState([])
     
     useEffect(() => {
       const llamarDatos = async () => {
         try {
-          const respuesta = await fetch('/src/assets/datos.json');
+          const respuesta = await fetch('src/assets/datos.json');
           const info = await respuesta.json();
           setDatos(info);
         } catch (error) {
@@ -46,4 +45,7 @@ function Info({ informacion }) {
     </div>
   );
 }
-export default App_uso_props2;
+
+
+
+export default App_Uso_props2;
