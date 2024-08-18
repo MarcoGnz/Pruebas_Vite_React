@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
+import Componente_multiple from "./Componente_multiple";
 
-function a() {
+
+function F1_gma() {
   const seleccion = useRef(4);
   const dias = useRef(1);
   const [resultado, setResultado] = useState(null);
@@ -8,12 +10,9 @@ function a() {
 
   const Calcular = () => {
     if (dias.current.value === "") {
-
       setResultado(null);
-
     } else {
       if (seleccion.current.value === "Vehiculo") {
-
         coste = dias.current.value * 100;
         if (coste > 500)
           (coste -= 100),
@@ -22,7 +21,8 @@ function a() {
                 <p>Costo del Alquiler del Vehiculo: {coste}$.</p>
                 <p> Se aplico un descueto de 100$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else if (coste > 300)
           (coste -= 50),
             setResultado(
@@ -30,11 +30,10 @@ function a() {
                 <p>Costo del Alquiler del Vehiculo: {coste}$.</p>
                 <p> Se aplico un descueto de 50$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else setResultado(<p>Costo del Alquiler del Vehiculo: {coste} $</p>);
-
       } else if (seleccion.current.value === "Pieza") {
-
         coste = dias.current.value * 50;
         if (coste > 500)
           (coste -= 100),
@@ -43,7 +42,8 @@ function a() {
                 <p>Costo del Alquiler de la pieza: {coste}$.</p>
                 <p> Se aplico un descueto de 100$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else if (coste > 300)
           (coste -= 70),
             setResultado(
@@ -51,11 +51,10 @@ function a() {
                 <p>Costo del Alquiler del pieza: {coste}$.</p>
                 <p> Se aplico un descueto de 70$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else setResultado(<p>Costo del Alquiler del pieza: {coste} $</p>);
-
       } else if (seleccion.current.value === "Casa") {
-
         coste = dias.current.value * 200;
         if (coste > 800)
           (coste -= 150),
@@ -64,7 +63,8 @@ function a() {
                 <p>Costo del Alquiler de la casa: {coste}$.</p>
                 <p> Se aplico un descueto de 150$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else if (coste > 500)
           (coste -= 100),
             setResultado(
@@ -72,13 +72,11 @@ function a() {
                 <p>Costo del Alquiler del casa: {coste}$.</p>
                 <p> Se aplico un descueto de 100$</p>
               </div>
-            ); //( - )
+            );
+        //( - )
         else setResultado(<p>Costo del Alquiler del casa: {coste} $</p>);
-
       } else {
-
         setResultado(null);
-
       }
     }
   };
@@ -120,6 +118,41 @@ function a() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function F2_pildoras() {
+  const [option, setOption] = useState("Hotel");
+  const [dias, setDias] = useState(0);
+
+  const selectorHotelCoche = (e) => {
+    setOption(e.target.value);
+  };
+
+  return <div className="container mt-5">
+    <h2 className="text-center mb-4">Alquiler Hotel o Coche</h2>
+    
+    <select onChange={selectorHotelCoche}>
+      <option value="Hotel">Hotel</option>
+      <option value="Coche">Coche</option>
+    </select>
+
+    <input type="text" onChange={e => setDias(e.target.value)} placeholder="Introduce n° de dias" />
+
+    {option=== "Hotel" && <Componente_multiple option={1} dias={dias} />}
+    {option=== "Coche" && <Componente_multiple option={2} dias={dias} />}
+  </div>
+
+}
+
+
+function a() {
+
+  return (
+    <div>
+      <F1_gma/>
+      <F2_pildoras/>
     </div>
   );
 }

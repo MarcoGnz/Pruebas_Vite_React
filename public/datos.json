@@ -25,7 +25,7 @@
     },
     {
         "id" : 4,
-        "_nombre": "...",
+        "nombre": "...",
         "edad": 19,
         "info": "Sin datos",
         "url_image" : "https://i.pinimg.com/originals/fd/dc/f9/fddcf9c6bd9a6fc8e938f907b8f9e4eb.jpg",
@@ -33,10 +33,18 @@
     },
     {
         "id" : 5,
-        "_nombre": "...",
+        "nombre": "...",
         "edad": 24,
         "info": "Sin datos",
         "url_image" : "https://i.pinimg.com/originals/fa/27/78/fa277875d76bc4f0e504c4b275a2dd17.jpg",
+        "franquicia": "AI girl Generate"
+    }, 
+    {
+        "id" : 6,
+        "nombre": "Frida",
+        "edad": 26,
+        "info": "Exploremos un mundo de imágenes generadas por IA creadas con Leonardo.AI y Stable Diffusion. Inspirado en Cyberpunk, Star Wars, Star Trek, Warhammer 40k, Sci-fi, Ciencia ficción, videojuegos, ilustración, arte, mundo alienígena, cosplay.",
+        "url_image" : "https://i.pinimg.com/originals/7f/d3/f1/7fd3f17e28f8f2cba10809a3b7620e69.jpg",
         "franquicia": "AI girl Generate"
     }
 ]

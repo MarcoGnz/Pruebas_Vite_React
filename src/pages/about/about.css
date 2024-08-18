@@ -1,0 +1,24 @@
+.about-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 1rem;
+  text-align: left;
+  color: #fff;
+  margin: 30px;
+}
+
+.about-content h1,
+.about-content h2 {
+  color: #61dafb; /* Color reactivo de React */
+}
+
+.about-content a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}

@@ -33,45 +33,51 @@
   }
 }
 
-
 .card {
-  
   background-color: rgba(255, 255, 255, 0.5); /* Blanco con 80% de opacidad */
   border: none; /* Opcional: elimina el borde para un efecto más limpio */
 }
-
 
 .read-the-docs {
   color: #888;
 }
 
-
-
 body {
-  background-image: url("https://i.pinimg.com/originals/16/6b/58/166b584a910f96e8d1f0b90671c83d0d.jpg");
+  margin: 0;
+  color: white; /* Texto blanco */
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/99/17/48/9917481e5f377ce0d0d32fc25fbf2254.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.text-font {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 20px;  
 
+.text-font {
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .c {
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
-  border-radius: 10%; 
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fondo blanco con 50% de transparencia */
+  border-radius: 10%;
   padding: 10px;
-  margin: 10px; 
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cuandro-imagen {
-/* Suggested code may be subject to a license. Learn more: ~LicenseLog:1727418499. */
+  /* Suggested code may be subject to a license. Learn more: ~LicenseLog:1727418499. */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,5 +89,18 @@ body {
 .cuandro-imagen img {
   height: 200px;
   width: 200px;
-  
+}
+
+.about {
+  /* Suggested code may be subject to a license. Learn more: ~LicenseLog:1633819457. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

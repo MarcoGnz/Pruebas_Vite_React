@@ -1,0 +1,17 @@
+
+
+.login-container {
+  background-color: rgba(24, 82, 92, 0.5); /* Fondo blanco con opacidad */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Medias queries para hacer el diseño más responsive */
+@media (max-width: 576px) {
+  .login-container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+}
